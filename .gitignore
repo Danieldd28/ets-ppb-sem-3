@@ -1,0 +1,16 @@
+*.iml
+.gradle/
+build/
+/local.properties
+.idea/
+.DS_Store
+captures/
+.externalNativeBuild/
+.cxx/
+
+# tidak perlu di repo
+gradlew
+gradlew.bat
+gradle/
+plan.txt
+.kotlin/

@@ -1,0 +1,182 @@
+<p><span style="background-color: white; color: #757575; font-size: 15px;">Nama : [ISI NAMA]</span></p><div style="background-color: white; color: #757575; font-family: Roboto, sans-serif; font-size: 15px;">NRP : 5053251032</div><div style="background-color: white; color: #757575; font-family: Roboto, sans-serif; font-size: 15px;">Kelas : PPB (M)</div><div style="background-color: white; color: #757575; font-family: Roboto, sans-serif; font-size: 15px;">Tanggal : 21 Oktober, 2026</div><div style="background-color: white; color: #757575; font-family: Roboto, sans-serif; font-size: 15px;">Link GitHub : <a href="[ISI LINK GITHUB]" target="_blank">ETS: LibraryReg</a></div><div style="background-color: white; color: #757575; font-family: Roboto, sans-serif; font-size: 15px;"><br />Video Presentasi:<br /></div>
+
+<!-- tempel iframe video presentasi di sini -->
+
+<div style="background-color: white; color: #757575; font-family: Roboto, sans-serif; font-size: 15px;"><br />Video Aplikasi:<br /></div>
+
+<!-- tempel iframe video demo aplikasi di sini -->
+
+<div class="BLOG_html_snippet">
+
+<h2>1. Deskripsi Studi Kasus</h2>
+
+<p>Pendaftaran anggota di perpustakaan kampus masih pakai formulir kertas. Antrean mengular di depan meja pendaftaran. Petugas sering salah catat, atau menerima formulir yang isinya tidak lengkap. Mencari data satu anggota berarti membolak-balik tumpukan kertas, dan kartu anggota baru jadi setelah verifikasi dan pencetakan yang lama.</p>
+
+<p>LibraryReg dibuat untuk menjawab masalah itu. Ini aplikasi Android, jadi calon anggota bisa mengisi formulir dari HP sendiri tanpa antre. Data langsung diperiksa sebelum disimpan. Petugas melihat semua anggota dalam satu daftar, mencari lewat nama atau nomor induk, membuka detailnya, lalu mengubah atau menghapus kalau perlu.</p>
+
+<h3>Data Anggota</h3>
+
+<table style="border-collapse: collapse; margin-bottom: 16px; width: 100%;">
+  <tr style="background: #e8f0fe;">
+    <th style="border: 1px solid #ccc; padding: 8px; text-align: left;">Atribut</th>
+    <th style="border: 1px solid #ccc; padding: 8px; text-align: left;">Aturan</th>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #ccc; padding: 8px;">Nama Lengkap</td>
+    <td style="border: 1px solid #ccc; padding: 8px;">Wajib diisi</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #ccc; padding: 8px;">NIM / NIP</td>
+    <td style="border: 1px solid #ccc; padding: 8px;">Wajib diisi, hanya angka, 8 sampai 18 digit, dan harus unik</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #ccc; padding: 8px;">Program Studi</td>
+    <td style="border: 1px solid #ccc; padding: 8px;">Wajib dipilih: Informatika, Sistem Informasi, Teknik Komputer, Desain Komunikasi Visual, Manajemen, Akuntansi</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #ccc; padding: 8px;">Alamat</td>
+    <td style="border: 1px solid #ccc; padding: 8px;">Wajib diisi</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #ccc; padding: 8px;">Nomor Telepon</td>
+    <td style="border: 1px solid #ccc; padding: 8px;">Wajib diisi, hanya angka, 10 sampai 13 digit</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #ccc; padding: 8px;">Email</td>
+    <td style="border: 1px solid #ccc; padding: 8px;">Wajib diisi dan harus berformat email yang valid</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #ccc; padding: 8px;">Jenis Keanggotaan</td>
+    <td style="border: 1px solid #ccc; padding: 8px;">Wajib dipilih: Mahasiswa, Dosen, Staf</td>
+  </tr>
+</table>
+
+<p>Soal hanya menulis "sesuai ketentuan" untuk nomor induk dan telepon, jadi batas jumlah digit di atas saya tentukan sendiri.</p>
+
+<h2>2. Fitur Aplikasi</h2>
+
+<table style="border-collapse: collapse; margin-bottom: 16px; width: 100%;">
+  <tr style="background: #e8f0fe;">
+    <th style="border: 1px solid #ccc; padding: 8px; text-align: center; width: 40px;">No</th>
+    <th style="border: 1px solid #ccc; padding: 8px; text-align: left; width: 28%;">Fitur</th>
+    <th style="border: 1px solid #ccc; padding: 8px; text-align: left;">Penjelasan</th>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #ccc; padding: 8px; text-align: center;">1</td>
+    <td style="border: 1px solid #ccc; padding: 8px;">Splash Screen</td>
+    <td style="border: 1px solid #ccc; padding: 8px;">Tampilan awal 2 detik berisi ikon buku, nama aplikasi, dan indikator loading.</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #ccc; padding: 8px; text-align: center;">2</td>
+    <td style="border: 1px solid #ccc; padding: 8px;">Daftar Anggota</td>
+    <td style="border: 1px solid #ccc; padding: 8px;">Layar utama berisi kartu anggota (nama, nomor induk, jenis keanggotaan) dan teks "Jumlah anggota: N".</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #ccc; padding: 8px; text-align: center;">3</td>
+    <td style="border: 1px solid #ccc; padding: 8px;">Pencarian</td>
+    <td style="border: 1px solid #ccc; padding: 8px;">Menyaring daftar langsung saat mengetik, berdasarkan nama atau nomor induk. Ada tombol × untuk menghapus kata kunci.</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #ccc; padding: 8px; text-align: center;">4</td>
+    <td style="border: 1px solid #ccc; padding: 8px;">Formulir Pendaftaran</td>
+    <td style="border: 1px solid #ccc; padding: 8px;">Tombol + membuka form dengan tujuh isian. Program studi dan jenis keanggotaan berupa dropdown. Ada tombol Batal dan Daftar.</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #ccc; padding: 8px; text-align: center;">5</td>
+    <td style="border: 1px solid #ccc; padding: 8px;">Validasi Data</td>
+    <td style="border: 1px solid #ccc; padding: 8px;">Pesan error muncul di bawah kolom yang salah: kolom kosong, email tidak valid, nomor induk bukan angka atau sudah terdaftar, telepon tidak sesuai panjangnya.</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #ccc; padding: 8px; text-align: center;">6</td>
+    <td style="border: 1px solid #ccc; padding: 8px;">Detail Anggota</td>
+    <td style="border: 1px solid #ccc; padding: 8px;">Ketuk kartu untuk melihat seluruh data satu anggota.</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #ccc; padding: 8px; text-align: center;">7</td>
+    <td style="border: 1px solid #ccc; padding: 8px;">Edit Anggota</td>
+    <td style="border: 1px solid #ccc; padding: 8px;">Ikon pensil (di kartu atau halaman detail) membuka form yang sudah terisi data lama.</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #ccc; padding: 8px; text-align: center;">8</td>
+    <td style="border: 1px solid #ccc; padding: 8px;">Hapus Anggota</td>
+    <td style="border: 1px solid #ccc; padding: 8px;">Ikon tempat sampah membuka dialog "Hapus Anggota?" sebelum data benar-benar dihapus.</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #ccc; padding: 8px; text-align: center;">9</td>
+    <td style="border: 1px solid #ccc; padding: 8px;">Empty State</td>
+    <td style="border: 1px solid #ccc; padding: 8px;">Muncul "Belum ada data anggota" kalau daftar kosong, dengan pesan berbeda saat pencarian tidak menemukan apa-apa.</td>
+  </tr>
+</table>
+
+<h2>3. Teknologi</h2>
+
+<ul>
+  <li>Kotlin sebagai bahasa pemrograman</li>
+  <li>Jetpack Compose untuk membangun antarmuka</li>
+  <li>Material 3 sebagai sistem desain</li>
+  <li>Navigation Compose untuk pindah antar layar</li>
+  <li>ViewModel dan StateFlow untuk menyimpan state</li>
+</ul>
+
+<p>Data disimpan di memori, dimulai dari empat anggota contoh (Andi Pratama, Siti Aisyah, Budi Santoso, Rina Lestari). Begitu aplikasi ditutup sepenuhnya, data kembali ke empat nama itu. Database belum saya pakai karena materinya belum diajarkan.</p>
+
+<p>Kodenya dibagi per tugas. Folder data berisi model anggota, aturan validasi, dan ViewModel. Folder ui berisi tiap layar. Aturan validasi sengaja saya taruh di file sendiri, terpisah dari layar, supaya layar cuma menampilkan pesan error dan tidak ikut menentukan benar atau salahnya data.</p>
+
+<h2>4. Skenario Pengujian</h2>
+
+<table style="border-collapse: collapse; margin-bottom: 16px; width: 100%;">
+  <tr style="background: #e8f0fe;">
+    <th style="border: 1px solid #ccc; padding: 8px; text-align: left;">Langkah</th>
+    <th style="border: 1px solid #ccc; padding: 8px; text-align: left;">Hasil yang Diharapkan</th>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #ccc; padding: 8px;">Buka aplikasi</td>
+    <td style="border: 1px solid #ccc; padding: 8px;">Splash sebentar, lalu daftar dengan 4 anggota</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #ccc; padding: 8px;">Ketik "budi" di pencarian</td>
+    <td style="border: 1px solid #ccc; padding: 8px;">Hanya Budi Santoso tampil, jumlah menjadi 1</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #ccc; padding: 8px;">Ketik "2310010" di pencarian</td>
+    <td style="border: 1px solid #ccc; padding: 8px;">Anggota dengan nomor induk berawalan itu tampil</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #ccc; padding: 8px;">Tekan + lalu Daftar dengan semua kolom kosong</td>
+    <td style="border: 1px solid #ccc; padding: 8px;">Pesan error muncul di ketujuh kolom, data tidak tersimpan</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #ccc; padding: 8px;">Isi email "andi@mail"</td>
+    <td style="border: 1px solid #ccc; padding: 8px;">Muncul "Format email tidak valid"</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #ccc; padding: 8px;">Isi nomor induk 231001001</td>
+    <td style="border: 1px solid #ccc; padding: 8px;">Muncul "NIM/NIP sudah terdaftar"</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #ccc; padding: 8px;">Isi semua data dengan benar, lalu Daftar</td>
+    <td style="border: 1px solid #ccc; padding: 8px;">Anggota baru muncul di daftar, jumlah bertambah</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #ccc; padding: 8px;">Ketuk salah satu kartu</td>
+    <td style="border: 1px solid #ccc; padding: 8px;">Halaman detail menampilkan ketujuh data anggota</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #ccc; padding: 8px;">Tekan ikon pensil, ubah alamat, Simpan</td>
+    <td style="border: 1px solid #ccc; padding: 8px;">Alamat berubah, nomor induk sendiri tidak dianggap duplikat</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #ccc; padding: 8px;">Tekan ikon tempat sampah, lalu Hapus</td>
+    <td style="border: 1px solid #ccc; padding: 8px;">Dialog konfirmasi muncul, data terhapus setelah dikonfirmasi</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #ccc; padding: 8px;">Putar layar saat form setengah terisi</td>
+    <td style="border: 1px solid #ccc; padding: 8px;">Isian tetap ada</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #ccc; padding: 8px;">Hapus semua anggota</td>
+    <td style="border: 1px solid #ccc; padding: 8px;">Tampil "Belum ada data anggota"</td>
+  </tr>
+</table>
+
+</div>
